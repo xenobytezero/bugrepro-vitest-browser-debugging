@@ -1,0 +1,28 @@
+{
+  "include": [
+    "./src/**/*.ts",
+    "./test/**/*.ts",
+    "./vite.config.mts",
+    "./vitest.d.ts"
+  ],
+  "compilerOptions": {
+
+    "outDir": "./dist",
+
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2021", "DOM", "DOM.Iterable"],
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true
+  }
+}
